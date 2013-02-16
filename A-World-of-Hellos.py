@@ -1,9 +1,9 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 #  A-World-of-Hellos.py
 #  
-#  Copyright 2013 Jonathan <jonathan@jonathan-Lenovo-G560>
+#  Copyright 2013 Jonathan Casteel <iczesmv@gmail.com>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -20,9 +20,11 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #  
+# version= 0.1.0
 #  
 
-hellos = {"english":"Hello, World!", "spanish":"\u00a1Hola mundo!", "french":"Salut le Monde!"}
+hellos = {"english":"Hello, World!", "spanish":"\u00a1Hola mundo!", 
+          "french":"Salut le Monde!"}
 
 def main():
 	while True:
