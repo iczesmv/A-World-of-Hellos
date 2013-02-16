@@ -20,21 +20,32 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 #  
-# version= 0.1.0
+#  version= 0.1.0
 #  
 
-hellos = {"english":"Hello, World!", "spanish":"\u00a1Hola mundo!", 
-          "french":"Salut le Monde!"}
+source = "http://www.roesler-ac.de/wolfram/hello.htm"
+
+hellos = {"ENGLISH":"Hello, World!", "SPANISH":"\u00a1Hola mundo!", 
+"FRENCH":"Salut le Monde", "PORTUGUESE":"Ol\u00e1, mundo", "GERMAN":"Hallo Welt",
+"ITALIAN":"Ciao Mondo"}
 
 def main():
 	while True:
 		lang = input('In what language do you want your Hello World?:')
+		lang = lang.upper() #makes input non-casesensitive
+			
+		if lang in hellos:
+			hello = hellos[lang]
+			print(hello)
 		
-		if lang == "quit":
+		elif lang == "QUIT":
 			break
 		
-		hello = hellos[lang]
-		print(hello)
+		elif lang == "WHERE FROM?":
+			print(source)
+		
+		else:
+			print("Insert a different language.")
 	
 	return 0
 
